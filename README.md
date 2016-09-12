@@ -8,7 +8,8 @@ Calculate depth of coverage as GATK DepthOfCoverage does, but without merging in
 
 ### Quickstart
 
- python depth_of_coverage_per_interval.py -d HG00096_DepthOfCoverage -o HG00096_DepthOfCoverage.notmerged.sample_interval_summary -ct 1 -ct 4 -ct 10 -L proteindomains.intervals
+    python depth_of_coverage_per_interval.py --help
+    python depth_of_coverage_per_interval.py -d HG00096_DepthOfCoverage -o HG00096_DepthOfCoverage.notmerged.sample_interval_summary -ct 1 -ct 4 -ct 10 -L proteindomains.intervals
 
 ### Usage
 
