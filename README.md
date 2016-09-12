@@ -4,9 +4,14 @@ GATK DepthOfCoverage, but without merging intervals
 ## Requirements
 
 * Python. Python version 2.7.11 has been tested.
-* 
+* Numpy. Version 1.11.0 has been tested.
 
-### sorva.py
+### Quickstart
+
+python depth_of_coverage_per_interval.py -d HG00096_DepthOfCoverage -o HG00096_DepthOfCoverage.notmerged.sample_interval_summary -ct 1 -ct 4 -ct 10 -L proteindomains.intervals
+
+### Usage
+
 '''Options:
   -h, --help            show this help message and exit
   --depthofcoverage DEPTHOFCOVERAGE, -d DEPTHOFCOVERAGE
@@ -15,6 +20,9 @@ GATK DepthOfCoverage, but without merging intervals
   --intervals INTERVALS, -L INTERVALS
                         file containing list of intervals. Sorted interval
                         file will be created here ending in .sorted
+  --summaryCoverageThreshold CT, -ct CT
+                        report the percentage of bases covered to an amount equal 
+                        to or greater than this number (e.g. % bases >= CT)
   --no_sort             do not sort interval file (default:False)
   --no_header           depthofcoverage does not contain header line
                         (default:False)
