@@ -1,5 +1,7 @@
 # DepthOfCoveragePerInterval
-Calculate depth of coverage as GATK DepthOfCoverage does, but without merging intervals
+Calculate depth of coverage as GATK DepthOfCoverage -L does, but without merging intervals. Run this AFTER running GATK DepthOfCoverage.
+
+Note: The software does not do sample-by-sample comparisons; it only takes into account the total and mean coverage columns from the GATK DepthOfCoverage output file.
 
 ## Requirements
 
