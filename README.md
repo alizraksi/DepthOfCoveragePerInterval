@@ -1,5 +1,5 @@
-# Depth-of-Coverage-Per-Interval
-GATK DepthOfCoverage, but without merging intervals
+# DepthOfCoveragePerInterval
+Calculate depth of coverage as GATK DepthOfCoverage does, but without merging intervals
 
 ## Requirements
 
