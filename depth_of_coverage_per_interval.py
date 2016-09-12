@@ -99,7 +99,7 @@ def run(depthofcoverage_file, intervals_file, output_file, ct_list, no_sort=Fals
                 dchrom, dpos = drow[0].split(':')
 
         if icount % 1000 == 0:
-            print 'Processing interval ' + icount + ' (' + i.rstrip() + ')'
+            print 'Processing interval ' + str(icount) + ' (' + i.rstrip() + ')'
 
         #Are start positions aligned?
 
