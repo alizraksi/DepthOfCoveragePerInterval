@@ -1,5 +1,8 @@
 # DepthOfCoveragePerInterval
-Calculate depth of coverage as GATK DepthOfCoverage -L does, but without merging intervals. Run this AFTER running GATK DepthOfCoverage.
+
+If you would like to calculate mean depth of coverage for custom intervals, GATK DepthOfCoverage -L has a serious limitation: it automatically merges overlapping intervals, making it impossible to calculate covrage for intervals such as known protein domains, which frequently overlap with each other.
+
+This python tool calculates depth of coverage as GATK DepthOfCoverage -L does, but without merging intervals. You will need to run this tool AFTER running GATK DepthOfCoverage initially.
 
 Note: The software does not do sample-by-sample comparisons; it only takes into account the total and mean coverage columns from the GATK DepthOfCoverage output file.
 
